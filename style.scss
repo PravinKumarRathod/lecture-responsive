@@ -327,63 +327,8 @@ main {
             }
         }
     }
-    section.view7 {
-        width: 100%;
-        padding: 1rem;
-        @include flex-column(1rem);
-        justify-content: space-between;
-
-        .top{
-            width: 100%;
-            img{
-                width: 100%;
-                border-radius: 0.7rem;
-            }
-        }
-        .bottom {
-            background-color: #292929;
-            border-radius: 0.7rem;
-            padding: 1.5rem;
-            @include flex-column(2rem);
-
-            .text {
-                @include flex-column(0.7rem);
-                margin-bottom: 4rem;
-                h2 {
-                    font-weight: 200;
-                    font-size: 2.5rem;
-                    text-transform: uppercase;
-                }
-
-                p {
-                    font-weight: 100;
-                    font-size: 1.5rem;
-                    opacity: 0.6;
-                    line-height: 1.5;
-                }
-            }
-                .btn{
-                    display: flex;
-                    gap: 1rem;
-                    align-items: center;
-                    
-                    i{
-                        background-color: rgba(255, 255, 255, .05);
-                        border: 1px solid rgba(239, 239, 239, 0.783);
-                        border-radius: 50%;
-                        padding: 0.3rem;
-                    }
-                    
-                
-                }
-            }
-
-        }
-        .bottom>p{
-            text-transform: uppercase;
-        }
-    }
-   
+    
+}   
 
 @media (min-width:900px) {
     main {
