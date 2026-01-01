@@ -162,6 +162,7 @@ main section.view2 {
   gap: 2.5rem;
   width: 100%;
   padding: 1rem;
+  font-family: z;
 }
 main section.view2 .top,
 main section.view2 .bottom {
@@ -171,18 +172,19 @@ main section.view2 .bottom {
 }
 main section.view2 .top .element,
 main section.view2 .bottom .element {
-  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  text-align: center;
 }
 main section.view2 .top .element small,
 main section.view2 .bottom .element small {
   opacity: 0.6;
+  font-size: 1rem;
 }
 main section.view2 .top .element h2,
 main section.view2 .bottom .element h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 main section.view3 {
@@ -486,6 +488,39 @@ main section.view7 .bottom .btn a:nth-child(1) {
   color: rgba(255, 255, 255, 0.536);
   padding: 0.4rem 0.6rem;
 }
+main section.view8 {
+  font-family: z;
+  background-color: #ffe97a;
+  padding: 2rem;
+  color: black;
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  border-radius: 0.8rem;
+  align-items: center;
+}
+main section.view8 .text {
+  padding-bottom: 2.5rem;
+}
+main section.view8 .text p {
+  font-weight: 500;
+  padding-bottom: 0.6rem;
+}
+main section.view8 .text h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  line-height: 100%;
+}
+main section.view8 .btn a {
+  font-family: x;
+  text-decoration: none;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 0.7rem;
+  padding: 1.25rem 6.2rem;
+  font-size: 1rem;
+}
 
 @media (min-width: 900px) {
   header .nav .left {
@@ -644,7 +679,8 @@ main section.view7 .bottom .btn a:nth-child(1) {
     flex-direction: row;
     padding: 1rem 3.9rem;
   }
-  main section.view7 .top, main section.view7 .bottom {
+  main section.view7 .top,
+  main section.view7 .bottom {
     width: 50%;
   }
   main section.view7 .top img {

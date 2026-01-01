@@ -185,6 +185,7 @@ main {
         @include flex-column(2.5rem);
         width: 100%;
         padding: 1rem;
+        font-family: z;
 
         .top,
         .bottom {
@@ -193,15 +194,16 @@ main {
             justify-content: space-around;
 
             .element {
-                text-align: center;
                 @include flex-column(0.2rem);
+                text-align: center;
 
                 small {
                     opacity: 0.6;
+                    font-size: 1rem;
                 }
 
                 h2 {
-                    font-size: 3rem;
+                    font-size: 2.5rem;
                     font-weight: 300;
                 }
             }
@@ -537,6 +539,42 @@ main {
 
 
     }
+
+    section.view8 {
+        font-family: z;
+        background-color: #ffe97a;
+        padding: 2rem;
+        color: black;
+        display: flex;
+        margin: 1rem;
+        flex-direction: column;
+        border-radius: 0.8rem;
+        align-items: center;
+        .text{
+            padding-bottom: 2.5rem;
+            p{
+                font-weight: 500;
+                padding-bottom: 0.6rem;
+            }
+            h1{
+                font-weight: 100;
+                font-size: 3rem;
+                line-height: 100%;
+            }
+        }
+        .btn{
+            a{
+                font-family: x;
+                text-decoration: none;
+                color: white;
+                border:1px solid black;
+                background-color: black;
+                border-radius: 0.7rem;
+                padding: 1.25rem 6.2rem;
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 @media (min-width:900px) {
@@ -736,26 +774,33 @@ main {
             flex-direction: row;
             padding: 1rem 4rem;
         }
+
         section.view7 {
             flex-direction: row;
             padding: 1rem 3.9rem;
-            .top,.bottom{
+
+            .top,
+            .bottom {
                 width: 50%;
             }
-            .top{
-                img{
+
+            .top {
+                img {
                     height: 30rem;
                 }
             }
-            .bottom{
+
+            .bottom {
                 padding: 3rem;
                 gap: 11rem;
-                .text{
-                    h2{
+
+                .text {
+                    h2 {
                         font-size: 2.78rem;
                     }
                 }
             }
         }
+
     }
 }
