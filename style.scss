@@ -580,7 +580,8 @@ main {
         }
     }
 }
-footer{
+
+footer {
     section.view9 {
         width: 93%;
         @include flex-column(1rem);
@@ -588,21 +589,25 @@ footer{
         padding: 1rem;
         border-radius: 1rem;
         margin: 1rem;
-        .top{
+
+        .top {
             padding: 1rem;
             padding-bottom: 3.5rem;
             font-family: z;
-            h2{
+
+            h2 {
                 font-weight: 100;
                 font-size: 1.8rem;
                 color: rgb(181, 181, 181);
             }
         }
-        .botom{
+
+        .botom {
             padding: 1rem;
             display: flex;
             gap: 0.6rem;
-            a{
+
+            a {
                 text-decoration: none;
                 color: rgb(181, 181, 181);
                 font-size: 1.3rem;
@@ -612,7 +617,8 @@ footer{
             }
         }
     }
-    section.view10{
+
+    section.view10 {
         display: flex;
         flex-direction: column;
         width: 92%;
@@ -621,20 +627,25 @@ footer{
         padding: 1rem;
         border-radius: 1rem;
         background-color: #292929;
-        h2{
+
+        h2 {
             font-family: z;
             padding: 1rem 0rem;
         }
-        p{
+
+        p {
             padding: 1rem 0rem;
             font-family: x;
             color: rgb(180, 180, 180);
         }
-        .pages{
+
+        .pages {
             padding: 1rem;
-            .btn{
+
+            .btn {
                 padding-top: 1rem;
-                a{
+
+                a {
                     font-family: x;
                     text-decoration: none;
                     color: black;
@@ -644,45 +655,51 @@ footer{
                 }
             }
         }
-        .cms{
+
+        .cms {
             padding: 1rem;
         }
-        .utility{
+
+        .utility {
             padding: 1rem;
         }
     }
-    section.view11{
+
+    section.view11 {
         display: flex;
         flex-direction: column;
         width: 92%;
         background-color: #292929;
-        margin:1rem;
+        margin: 1rem;
         border-radius: 1rem;
         padding: 1rem;
         align-items: center;
         justify-content: center;
         font-family: x;
 
-        .top{
+        .top {
             padding-top: 0.5rem;
             text-align: center;
             color: rgb(147, 147, 147);
             padding-bottom: 2rem;
-            span{
+
+            span {
                 color: white;
             }
         }
-        .bottom{
+
+        .bottom {
             display: flex;
             gap: 1rem;
             justify-content: center;
             align-items: center;
             padding-bottom: 1.5rem;
-            a{
+
+            a {
                 text-decoration: none;
                 color: rgb(141, 141, 141);
-                border:1px solid rgb(141, 141, 141);
-                border-radius:50%;
+                border: 1px solid rgb(141, 141, 141);
+                border-radius: 50%;
                 font-size: 1.3rem;
                 padding: 0.5rem 0.8rem;
             }
@@ -947,6 +964,76 @@ footer{
                 }
             }
         }
+    }
 
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "sidebar links"
+            "sidebar  bottom";
+        gap: 1rem;
+        padding: 1rem 4rem;
+
+        section.view9 {
+            grid-area: sidebar;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .top {
+                padding: 1.5rem;
+                padding-bottom: 0;
+            }
+
+            .botom {
+                padding: 1.5rem;
+            }
+        }
+
+        section.view10 {
+            grid-area: links;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .pages,
+            .cms,
+            .utility {
+                flex: 1;
+            }
+
+            .pages .btn {
+                margin-top: 3rem;
+            }
+        }
+
+        section.view11 {
+            grid-area: bottom;
+            width: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+
+            .top {
+                padding: 0;
+                text-align: left;
+            }
+
+            .bottom {
+                padding: 0;
+            }
+        }
     }
 }
