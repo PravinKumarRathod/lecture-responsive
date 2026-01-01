@@ -140,20 +140,25 @@ main section.view1 .bottom .text h1 {
   font-weight: 200;
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: z;
 }
 main section.view1 .bottom .text p {
   font-weight: 100;
   font-size: 1.5rem;
   opacity: 0.6;
   line-height: 1.5;
+  font-family: x;
 }
-main section.view1 .bottom .text button {
-  width: -moz-fit-content;
-  width: fit-content;
-  border: none;
-  outline: none;
-  padding: 0.7rem 1rem;
-  border-radius: 0.5rem;
+main section.view1 .bottom .text .btn {
+  font-family: x;
+}
+main section.view1 .bottom .text .btn a {
+  text-decoration: none;
+  color: rgb(138, 138, 138);
+  border: 1px solid rgb(138, 138, 138);
+  border-radius: 50%;
+  font-size: 1.1rem;
+  padding: 0.4rem 0.6rem;
 }
 main section.view2 {
   display: flex;
@@ -217,20 +222,14 @@ main section.view3 .bottom .text h1 {
   font-weight: 200;
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: z;
 }
 main section.view3 .bottom .text p {
   font-weight: 100;
   font-size: 1.5rem;
   opacity: 0.6;
   line-height: 1.5;
-}
-main section.view3 .bottom .text button {
-  width: -moz-fit-content;
-  width: fit-content;
-  border: none;
-  outline: none;
-  padding: 0.7rem 1rem;
-  border-radius: 0.5rem;
+  font-family: x;
 }
 main section.view3 .bottom > p {
   text-transform: uppercase;
@@ -266,20 +265,14 @@ main section.view4 .bottom .text h1 {
   font-weight: 200;
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: z;
 }
 main section.view4 .bottom .text p {
   font-weight: 100;
   font-size: 1.5rem;
   opacity: 0.6;
   line-height: 1.5;
-}
-main section.view4 .bottom .text button {
-  width: -moz-fit-content;
-  width: fit-content;
-  border: none;
-  outline: none;
-  padding: 0.7rem 1rem;
-  border-radius: 0.5rem;
+  font-family: x;
 }
 main section.view4 .bottom > p {
   text-transform: uppercase;
@@ -711,6 +704,7 @@ footer section.view11 .bottom a {
   main section.view1 .bottom .text p {
     width: 60%;
     font-size: 1rem;
+    font-family: x;
   }
   main section.view2 {
     flex-direction: row;
