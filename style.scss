@@ -94,9 +94,8 @@ header {
             a {
                 text-decoration: none;
                 font-size: 0.87;
-                border: 1px dashed rgba(255, 119, 0, 0.844);
-                padding: 1rem 1rem;
-                border-radius: 0.2rem;
+                padding: 0.7rem 1rem;
+                border-radius: 0.7rem;
                 color: white;
                 background-color: #292929;
             }
@@ -550,28 +549,142 @@ main {
         flex-direction: column;
         border-radius: 0.8rem;
         align-items: center;
-        .text{
+
+        .text {
             padding-bottom: 2.5rem;
-            p{
+
+            p {
                 font-weight: 500;
                 padding-bottom: 0.6rem;
             }
-            h1{
+
+            h1 {
                 font-weight: 100;
                 font-size: 3rem;
                 line-height: 100%;
             }
         }
-        .btn{
-            a{
+
+        .btn {
+            a {
                 font-family: x;
                 text-decoration: none;
                 color: white;
-                border:1px solid black;
-                background-color: black;
-                border-radius: 0.7rem;
+                border: 1px solid rgb(14, 14, 14);
+                background-color: rgb(14, 14, 14);
+                border-radius: 0.5rem;
                 padding: 1.25rem 6.2rem;
+                border: none;
                 font-size: 1rem;
+            }
+        }
+    }
+}
+footer{
+    section.view9 {
+        width: 93%;
+        @include flex-column(1rem);
+        background-color: #292929;
+        padding: 1rem;
+        border-radius: 1rem;
+        margin: 1rem;
+        .top{
+            padding: 1rem;
+            padding-bottom: 3.5rem;
+            font-family: z;
+            h2{
+                font-weight: 100;
+                font-size: 1.8rem;
+                color: rgb(181, 181, 181);
+            }
+        }
+        .botom{
+            padding: 1rem;
+            display: flex;
+            gap: 0.6rem;
+            a{
+                text-decoration: none;
+                color: rgb(181, 181, 181);
+                font-size: 1.3rem;
+                border: 1px solid rgb(181, 181, 181);
+                border-radius: 50%;
+                padding: 0.4rem 0.6rem;
+            }
+        }
+    }
+    section.view10{
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        gap: 1rem;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: #292929;
+        h2{
+            font-family: z;
+            padding: 1rem 0rem;
+        }
+        p{
+            padding: 1rem 0rem;
+            font-family: x;
+            color: rgb(180, 180, 180);
+        }
+        .pages{
+            padding: 1rem;
+            .btn{
+                padding-top: 1rem;
+                a{
+                    font-family: x;
+                    text-decoration: none;
+                    color: black;
+                    background-color: #ffe97a;
+                    padding: 1rem 1.5rem;
+                    border-radius: 0.5rem;
+                }
+            }
+        }
+        .cms{
+            padding: 1rem;
+        }
+        .utility{
+            padding: 1rem;
+        }
+    }
+    section.view11{
+        display: flex;
+        flex-direction: column;
+        width: 92%;
+        background-color: #292929;
+        margin:1rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+        font-family: x;
+
+        .top{
+            padding-top: 0.5rem;
+            text-align: center;
+            color: rgb(147, 147, 147);
+            padding-bottom: 2rem;
+            span{
+                color: white;
+            }
+        }
+        .bottom{
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 1.5rem;
+            a{
+                text-decoration: none;
+                color: rgb(141, 141, 141);
+                border:1px solid rgb(141, 141, 141);
+                border-radius:50%;
+                font-size: 1.3rem;
+                padding: 0.5rem 0.8rem;
             }
         }
     }
@@ -798,6 +911,39 @@ main {
                     h2 {
                         font-size: 2.78rem;
                     }
+                }
+            }
+        }
+
+        section.view8 {
+            margin: 1rem 3.5rem;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .text {
+                width: 70%;
+                padding-top: 2rem;
+                padding-left: 2rem;
+
+                p {
+                    padding-left: 0.5rem;
+                    font-size: 1.3rem;
+                    font-family: x;
+                    font-weight: 300;
+                }
+
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+
+            .btn {
+                padding-top: 5.5rem;
+                padding-right: 2rem;
+                width: auto;
+
+                a {
+                    padding: 1.2rem 2rem;
                 }
             }
         }
