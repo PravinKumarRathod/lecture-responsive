@@ -6,6 +6,10 @@
   font-family: z;
   src: url(./63cffc0a3942456e003bc265_Chillax-Regular.woff);
 }
+@font-face {
+  font-family: s;
+  src: url(./63cffc20aa8997095067596f_Satoshi-Light.woff);
+}
 * {
   margin: 0%;
   padding: 0%;
@@ -25,7 +29,7 @@ html {
 }
 
 body {
-  background-color: #1d1d1d;
+  background-color: #121212;
 }
 
 header {
@@ -159,21 +163,25 @@ main section.view2 {
   width: 100%;
   padding: 1rem;
 }
-main section.view2 .top, main section.view2 .bottom {
+main section.view2 .top,
+main section.view2 .bottom {
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
-main section.view2 .top .element, main section.view2 .bottom .element {
+main section.view2 .top .element,
+main section.view2 .bottom .element {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
 }
-main section.view2 .top .element small, main section.view2 .bottom .element small {
+main section.view2 .top .element small,
+main section.view2 .bottom .element small {
   opacity: 0.6;
 }
-main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
+main section.view2 .top .element h2,
+main section.view2 .bottom .element h2 {
   font-size: 3rem;
   font-weight: 300;
 }
@@ -226,21 +234,21 @@ main section.view3 .bottom .text button {
 main section.view3 .bottom > p {
   text-transform: uppercase;
 }
-main section.view5 {
+main section.view4 {
   width: 100%;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-main section.view5 .top {
+main section.view4 .top {
   width: 100%;
 }
-main section.view5 .top img {
+main section.view4 .top img {
   width: 100%;
   border-radius: 0.7rem;
 }
-main section.view5 .bottom {
+main section.view4 .bottom {
   background-color: #292929;
   border-radius: 0.7rem;
   padding: 1.5rem;
@@ -248,23 +256,23 @@ main section.view5 .bottom {
   flex-direction: column;
   gap: 3rem;
 }
-main section.view5 .bottom .text {
+main section.view4 .bottom .text {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
 }
-main section.view5 .bottom .text h1 {
+main section.view4 .bottom .text h1 {
   font-weight: 200;
   font-size: 2.5rem;
   text-transform: uppercase;
 }
-main section.view5 .bottom .text p {
+main section.view4 .bottom .text p {
   font-weight: 100;
   font-size: 1.5rem;
   opacity: 0.6;
   line-height: 1.5;
 }
-main section.view5 .bottom .text button {
+main section.view4 .bottom .text button {
   width: -moz-fit-content;
   width: fit-content;
   border: none;
@@ -272,8 +280,28 @@ main section.view5 .bottom .text button {
   padding: 0.7rem 1rem;
   border-radius: 0.5rem;
 }
-main section.view5 .bottom > p {
+main section.view4 .bottom > p {
   text-transform: uppercase;
+}
+main section.view5 {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section.view5 .left {
+  padding: 0rem 1.5rem;
+}
+main section.view5 .left h2 {
+  font-size: 2.5rem;
+  font-family: z;
+  font-weight: 100;
+}
+main section.view5 .right a {
+  color: white;
+  text-decoration: none;
+  display: none;
 }
 main section.view6 {
   display: flex;
@@ -294,7 +322,8 @@ main section.view6 .card1 {
   justify-content: space-between;
   padding: 1rem;
 }
-main section.view6 .card1 .icon, main section.view6 .card1 .bottom {
+main section.view6 .card1 .icon,
+main section.view6 .card1 .bottom {
   background-color: rgba(187, 187, 187, 0.375);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -332,7 +361,8 @@ main section.view6 .card2 {
   justify-content: space-between;
   padding: 1rem;
 }
-main section.view6 .card2 .icon, main section.view6 .card2 .bottom {
+main section.view6 .card2 .icon,
+main section.view6 .card2 .bottom {
   background-color: rgba(187, 187, 187, 0.375);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -370,7 +400,8 @@ main section.view6 .card3 {
   justify-content: space-between;
   padding: 1rem;
 }
-main section.view6 .card3 .icon, main section.view6 .card3 .bottom {
+main section.view6 .card3 .icon,
+main section.view6 .card3 .bottom {
   background-color: rgba(187, 187, 187, 0.375);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -395,6 +426,65 @@ main section.view6 .card3 .bottom {
 }
 main section.view6 .card3 .bottom p {
   text-transform: uppercase;
+}
+main section.view7 {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view7 .top {
+  width: 100%;
+}
+main section.view7 .top img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+main section.view7 .bottom {
+  background-color: #292929;
+  border-radius: 0.7rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.view7 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding-bottom: 1rem;
+}
+main section.view7 .bottom .text h2 {
+  font-family: z;
+  font-weight: 200;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+main section.view7 .bottom .text p {
+  font-family: x;
+  font-weight: 400;
+  font-size: 1.1rem;
+  opacity: 0.6;
+  line-height: 1.5;
+}
+main section.view7 .bottom .btn {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  font-family: x;
+}
+main section.view7 .bottom .btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+}
+main section.view7 .bottom .btn a:nth-child(1) {
+  border: 1px solid rgba(255, 255, 255, 0.531);
+  border-radius: 50%;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.536);
+  padding: 0.4rem 0.6rem;
 }
 
 @media (min-width: 900px) {
@@ -501,27 +591,70 @@ main section.view6 .card3 .bottom p {
   main section.view3 .bottom .paragraphs p {
     font-size: 1rem;
   }
-  main section.view5 {
+  main section.view4 {
     flex-direction: row;
     padding: 1rem 4rem;
   }
-  main section.view5 .top,
-  main section.view5 .bottom {
+  main section.view4 .top,
+  main section.view4 .bottom {
     width: 50%;
   }
-  main section.view5 .bottom {
+  main section.view4 .bottom {
     justify-content: space-between;
     padding: 3rem;
   }
-  main section.view5 .bottom .paragraphs {
+  main section.view4 .bottom .paragraphs {
     display: flex;
     gap: 2rem;
   }
-  main section.view5 .bottom .paragraphs p {
+  main section.view4 .bottom .paragraphs p {
     font-size: 1rem;
+  }
+  main section.view5 {
+    padding: 2rem;
+  }
+  main section.view5 .left {
+    padding-left: 3rem;
+  }
+  main section.view5 .left h2 {
+    font-size: 3rem;
+  }
+  main section.view5 .right {
+    padding: 0rem 4rem;
+  }
+  main section.view5 .right a {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: x;
+  }
+  main section.view5 .right a:nth-child(1) {
+    border: 1px solid rgba(255, 255, 255, 0.531);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.536);
+    padding: 0.5rem 0.7rem;
+  }
+  main section.view5 .right a:nth-child(2) {
+    padding-left: 0.4rem;
   }
   main section.view6 {
     flex-direction: row;
     padding: 1rem 4rem;
+  }
+  main section.view7 {
+    flex-direction: row;
+    padding: 1rem 3.9rem;
+  }
+  main section.view7 .top, main section.view7 .bottom {
+    width: 50%;
+  }
+  main section.view7 .top img {
+    height: 30rem;
+  }
+  main section.view7 .bottom {
+    padding: 3rem;
+    gap: 11rem;
+  }
+  main section.view7 .bottom .text h2 {
+    font-size: 2.78rem;
   }
 }/*# sourceMappingURL=style.css.map */
